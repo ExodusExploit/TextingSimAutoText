@@ -2,7 +2,7 @@ getgenv().text = false
 
 function text()
     spawn(function()
-        while getgenv().text == true
+        while getgenv().text == true do
             game:GetService("ReplicatedStorage").Events.SendTexts:FireServer("Phone")
             wait()
         end
