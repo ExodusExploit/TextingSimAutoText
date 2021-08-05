@@ -1,8 +1,8 @@
 getgenv().text = false
 
-function tap()
+function text()
     spawn(function()
-        while getgenv().tap == true
+        while getgenv().text == true
             game:GetService("ReplicatedStorage").Events.SendTexts:FireServer("Phone")
             wait()
         end
